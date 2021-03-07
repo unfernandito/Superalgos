@@ -272,6 +272,7 @@ function newSuperalgosDocSpace() {
 
     function onClosing() {
         thisObject.contextMenu.removeContextMenuFromScreen()
+        UI.projects.superalgos.spaces.docsSpace.currentDocumentBeingRendered = undefined
         thisObject.isVisible = false
     }
 

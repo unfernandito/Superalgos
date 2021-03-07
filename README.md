@@ -1,4 +1,4 @@
-# Superalgos Beta 9 - Getting Started Guide
+# Superalgos Beta 8 - Getting Started Guide
 
 All procedures are the same for Windows, Linux, or Mac OS. Raspberry Pi terminal commands have been included for ease of use.
 
@@ -18,11 +18,11 @@ Node JS is an open-source server environment required to run Superalgos.
 
 **c.** Run the installer with the default configuration — just click Next until Node.JS is fully installed.
 
-**NOTE FOR RASPBERRY PI USERS:** From the SSH Terminal, send the following commands to install Node. **NOTE:** It is best to use the most current and updated version of the FULL PiOS image.
+**Raspberry Pi Users:** From the SSH Terminal, send the following commands to install Node. ::NOTE:: It is best to use the most current and updated version of the FULL PiOS image.
 ```
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 ```
-followed by
+followed by 
 ```
 sudo apt-get install -y nodejs
 ```
@@ -51,7 +51,7 @@ Git is an open-source distributed version control system required to download an
 
 **NOTE FOR MAC USERS:** Depending on your setup, installing Git may be optional. The native XCode Command Line Developer Tools seems to work well. If you do install Git, we have tested Tim Harper's binary installer successfully.
 
-**NOTE FOR RASPBERRY PI USERS:**
+**Raspberry Pi Users:**
 send the SSH Terminal command to install git. The most recent version of PiOS has Git already installed, so this may give you an error. The error will not affect your installation.
 ```
 sudo apt-get install git
@@ -71,16 +71,16 @@ Before you begin, it is recommended that you set up Chrome/Safari as your defaul
 
 # Superalgos Client Installation
 
-**1.** Scroll the page all the way to the top. Find and click the **Fork** button to create your fork/copy of this repository. To fork Superalgos you need a GitHub account. If you don't have one, go ahead and create it.
+**1.** Scroll the page all the way to the top. Find and click the **Fork** button to create your fork/copy of this repository. To fork Superalgos you need a GitHub account. If you don't have one, go ahead and create it. 
 
-**NOTE:** A Fork is required for your contributions to the project. The reason why Superalgos is free and open-source is that the project has set up a <a href="https://superalgos.org/community-business.shtml" target="_blank">Collective Business</a> in which all users may participate. The way to participate is to <a href="https://superalgos.org/community-contribute.shtml" target="_blank">contribute</a> to make Superalgos better. The project's <a href="https://superalgos.org/token-overview.shtml" target="_blank">token</a> is distributed among contributors.
+**NOTE:** A Fork is required for your contributions to the project. Superalgos will soon be moving into a new phase of development by incentivizing contributions. Incentives will be retroactive. The earlier in the life of the project you start contributing, the juicier your incentives will be, as the impact of contributions in a Community-driven project is clearly a function of time. This is an open invitation for you to become a vested member of the community!
 
 **2.** Once the fork is created, you will land on the page of your fork. Copy the URL from your browser's address bar.
 
 **3.** In your computer/laptop/server, open a command prompt or terminal as an administrator (to avoid issues with permissions) and type:
 
 ```
-git clone
+git clone 
 ```
 
 **5.** Don't hit Enter yet! Complete the command by pasting the URL of your fork!
@@ -107,34 +107,9 @@ Ok, you have installed Superalgos. To run the App, jump to the section Usage bel
 
 **4.** Before installing the client on a remote computer in an attempt to access the UI from a different machine, we highly recommend you do a standard installation on your PC / laptop first. Leave your Raspberry Pi or server for later, once you have done all available tutorials. This single tip will save you a lot of time: you don't need to add complexity before you learn how to handle the app.
 
-## Migrating from Superalgos Beta 8
-
-### Refactorings 
-
-In order to migrate your own workspaces to Beta 9, you will need to open My Workspaces folder with an IDE like VS Code and do some refactorings. This is what you need to find and replace:
-
-| Find | Replace With |
-| :---: | :---: |
-| Current | Trading Current |
-| current | tradingCurrent |
-| Last | Trading Last |
-| last | tradingLast |
-| Episode | Trading Episode |
-| episode | tradingEpisode |
-| Episode Counters | Trading Episode Counters |
-| episodeCounters | tradingEpisodeCounters |
-| Episode Statistics | Trading Episode Statistics |
-| episodeStatistics | tradingEpisodeStatistics |
-| Distance To Event | Distance To Trading Event |
-| distanceToEvent | distanceToTradingEvent |
-
-### Renaming of Exchange Folders
-
-In Beta 9 the exchange id is used at the code and folder name instead of the exchange name. So to migrate to Beta 9 users at key sensitive OS must rename their Data Storage Exchange folders for the Id of the exchange that in the case of Binance is the same name with lower B: binance. If you are using a different exchange, look at it's node config and use the value at the property codeName as a folder name at your Data Storage folder.
-
 # Usage
 
-**1.** To run the Superalgos client, go to the Superalgos directory/folder and run this command:
+**1.** To run the Superalgos client, go to the Superalgos directory/folder and run this command: 
 
 ```
 node run
@@ -151,8 +126,6 @@ node run minMemo noBrowser
 
 ![run-the-system-01](https://user-images.githubusercontent.com/13994516/107037804-e5fc6200-67bb-11eb-82f2-d0f40247fa14.gif)
 
-![run-the-system-01](https://user-images.githubusercontent.com/13994516/107037804-e5fc6200-67bb-11eb-82f2-d0f40247fa14.gif)
-
 **2.** The command launches your default browser to load the UI. If Chrome/Safari is not your default browser, copy the URL, close the browser, open Chrome/Safari, and paste the URL. Be patient... it takes a few seconds to fully load the UI.
 
 **3.** A Welcome Tutorial pops-up automatically. You must do this Tutorial to finish the setup and to learn the basics. It's the ultimate onboarding experience, superior to all other resources available, including videos and the docs.
@@ -165,7 +138,7 @@ node run minMemo noBrowser
 
 # Uninstall
 
-Superalgos writes nothing outside of the ```Superalgos``` folder. To completely uninstall the software, just delete the folder.
+Superalgos writes nothing outside of the ```Superalgos``` folder. To completely uninstall the software, just delete the folder. 
 
 # Welcome Tutorial
 
@@ -240,7 +213,7 @@ Superalgos is a platform to automate crypto-trading. It is implemented as a Node
 
 * Don't like the UI?
 * Don't like the icons used?
-* Don't like the Charting System?
+* Don't like the Charting System? 
 * Don't like the Visual Designer?
 * Don't like the Visual Debugger?
 * Don't like the Docs?
@@ -265,7 +238,7 @@ No problem, code or integrate libraries with your own version of any component a
 
 * There are no paid plans or anything that costs you money.
 * There is no locked functionality. You may use the full capacity of the software.
-* There is no limit to the number of backtests you may run.
+* There is no limit to the number of backtests you may run. 
 * There is no limit to the number of live sessions you may run.
 * There is no limit to the number of historical data you may download.
 * There is no limit to the volume of data you may process.
@@ -294,10 +267,10 @@ No problem, code or integrate libraries with your own version of any component a
 ## Via Telegram
 
 Online support through our [Superalgos User's Support Group](https://t.me/superalgossupport).
-
+ 
 ## In-App Integrated Documentation
 
-Superalgos features interactive documentation built-in the system.
+Superalgos features interactive documentation.
 
 ## Video Tutorials
 
@@ -321,7 +294,9 @@ Meet other users in the [Superalgos Telegram Community Group](https://t.me/super
 
 Meet developers in the [Superalgos Telegram Developer's Group](https://t.me/superalgosdevelop).
 
-Users meet in other topic-specific Telegram Groups. There's a [complete list of groups](https://superalgos.org/community-join.shtml) on the website.
+Meet designers in the [Superalgos Telegram UX/UI Group](https://t.me/superalgosuxui).
+
+Spanish speaking users hang out in the [Superalgos en Español Telegram Group](https://t.me/superalgos_es).
 
 ## Blog
 
@@ -337,12 +312,20 @@ Or follow [Superalgos on Facebook](https://www.facebook.com/superalgos).
 
 # Contributing
 
-Superalgos is a Community Project built by users for users. Learn [how you may contribute](https://superalgos.org/community-contribute.shtml).
+Superalgos is a Community Project built by Contributors for Contributors. Learn [how to become a Contributor](https://superalgos.org/community-contribute.shtml).
 
+# Docker Image
 
-## Top Contributors
+If you want to run superalgo over docker platform, you should follow the next steps:
 
-Luis Fernando Molina, Julian Molina, Andreja Cobeljic, Matías Benitez, Ira Miller, Eduardo Remis, Jeff Braun, rico4dev, 9808us, Barry Low, Nikola Bjelogrlic, Hirajin Koizuko, Francisco J. Santillán, Norman, Viktoria B., Guillermo V., Carl J, Daniel J., Javier A., Gustavo J., Romina GS, Pedro P., Thais M., Andrey M., Loui M., Natalia M., Bashar A., Carlos V., Diego M., CarnivalBen, Sebastian E., Bogdan P., Marko V., Igor S., Niksa K., Rodrigo M., Nicanor M., Alejandro P., Mateo H., Lan T., Leon A., Uroš R., Filip M., Vladimir J. and Pavle B.
+1. [Install docker](https://docs.docker.com/engine/install/)
+2. `docker login ghcr.io --username your-github-username --password-stdin`
+3. `docker run -p 18041:18041 -p 34248 superalgos/superalgos`
+4. Now you can access to the superalgos UI
+
+## Top Contributors 
+
+Luis Fernando Molina, Julian Molina, Andreja Cobeljic, Matías Benitez, Ira Miller, Eduardo Remis, Jeff Braun, rico4dev, 9808us, Barry Low, Nikola Bjelogrlic, Hirajin Koizuko, Francisco J. Santillán, Norman, Viktoria B., Guillermo V., Daniel J., Javier A., Gustavo J., Romina GS, Pedro P., Thais M., Andrey M., Loui M., Natalia M., Bashar A., Carlos V., Diego M., CarnivalBen, Sebastian E., Bogdan P., Marko V., Igor S., Niksa K., Rodrigo M., Nicanor M., Alejandro P., Mateo H., Lan T., Leon A., Uroš R., Filip M., Vladimir J. and Pavle B.
 
 # License
 

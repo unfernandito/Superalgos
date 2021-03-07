@@ -3,6 +3,9 @@
     "pageNumber": 35,
     "type": "Tutorial Step - Trading Systems Trigger Stage Test",
     "definition": {
+        "icon": {
+            "project": "Superalgos"
+        },
         "text": "This step will play a video in full screen mode."
     },
     "paragraphs": [

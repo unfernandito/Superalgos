@@ -3,14 +3,7 @@
     "pageNumber": 41,
     "type": "Tutorial Step - Welcome Charts Scales Auto Locked",
     "definition": {
-        "text": "This step will play a video in full screen mode.",
-        "translations": [
-            {
-                "language": "IT",
-                "text": "Questo step eseguirà un video in modalità schermo intero.",
-                "updated": 1614893428433
-            }
-        ]
+        "text": "This step will play a video in full screen mode."
     },
     "paragraphs": [
         {
