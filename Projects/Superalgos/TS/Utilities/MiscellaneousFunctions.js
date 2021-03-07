@@ -3,8 +3,7 @@ exports.newSuperalgosUtilitiesMiscellaneousFunctions = function () {
     let thisObject = {
         genereteUniqueId: genereteUniqueId,
         truncateToThisPrecision: truncateToThisPrecision,
-        pad: pad,
-        asyncGetDatasetFile: asyncGetDatasetFile
+        pad: pad
     }
 
     return thisObject
@@ -23,26 +22,5 @@ exports.newSuperalgosUtilitiesMiscellaneousFunctions = function () {
     function pad(str, max) {
         str = str.toString();
         return str.length < max ? pad("0" + str, max) : str;
-    }
-
-    async function asyncGetDatasetFile(datasetModule, filePath, fileName) {
-        /*
-        This function helps a caller to use await syntax while the called
-        function uses callbacks, specifically for retrieving files.
-        */
-        let promise = new Promise((resolve, reject) => {
-
-            datasetModule.getTextFile(filePath, fileName, onFileReceived)
-            function onFileReceived(err, text) {
-
-                let response = {
-                    err: err,
-                    text: text
-                }
-                resolve(response)
-            }
-        })
-
-        return promise
     }
 }
